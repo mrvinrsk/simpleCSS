@@ -1,0 +1,14 @@
+@import "breakpoints";
+
+@each $name, $breakpoint in $breakpoints {
+  .box-#{$name} {
+    margin: auto;
+    max-width: $breakpoint;
+  }
+
+  @include media-breakpoint-down($name) {
+    .box-#{$name} {
+      max-width: 95%;
+    }
+  }
+}

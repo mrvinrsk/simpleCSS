@@ -1,0 +1,152 @@
+$main: (
+        "main-lightest": #fca581,
+        "main-lighter": #ff8047,
+        "main-light": #ff6b2d,
+        "main": #fc5102,
+        "main-dark": #b43800,
+        "main-darker": #8b2c01,
+        "main-darkest": #611e00
+);
+
+$gray: (
+        "white": #FFF,
+        "white-darker": #EEE,
+        "gray-lightest": #d5d5d5,
+        "gray-lighter": #b5b5b5,
+        "gray-light": #909090,
+        "gray": #323232,
+        "gray-dark": #202020,
+        "gray-darker": #151515,
+        "gray-darkest": #101010
+);
+
+$success: (
+        "success-lightest": #5cfa50,
+        "success-lighter": #10d900,
+        "success-light": #0ca800,
+        "success": #0c8700,
+        "success-dark": #0b6800,
+        "success-darker": #055300,
+        "success-darkest": #033800
+);
+
+$error: (
+        "warning-lightest": #ffe46a,
+        "warning-lighter": #ffde47,
+        "warning-light": #fdd92c,
+        "warning": #ffd500,
+        "warning-dark": #bfa000,
+        "warning-darker": #937b00,
+        "warning-darkest": #6d5d00,
+
+        "error-lightest": #ef7373,
+        "error-lighter": #ec4f4f,
+        "error-light": #e83131,
+        "error": #e21b1b,
+        "error-dark": #b60b0b,
+        "error-darker": #850606,
+        "error-darkest": #5e0303
+);
+
+$info: (
+        "info-lightest": #44cae5,
+        "info-lighter": #21b8d7,
+        "info-light": #09a3c2,
+        "info": #048fab,
+        "info-dark": #037286,
+        "info-darker": #015869,
+        "info-darkest": #014b4b
+);
+
+$dark: (
+        "dark-lightest": #555555,
+        "dark-lighter": #444444,
+        "dark-light": #333333,
+        "dark": #202020,
+        "dark-darker": #111111,
+        "black": #000,
+);
+
+
+$theme: (
+        $main,
+        $gray,
+        $success,
+        $error,
+        $info,
+        $dark
+);
+
+
+/* Color */
+@mixin eachColor() {
+  @each $colorTheme in $theme {
+    @each $name, $color in $colorTheme {
+      @content($name, $color);
+    }
+  }
+}
+
+
+@include eachColor() using($name, $value) {
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
+
+
+@function lighter($name, $color: false, $steps: 1) {
+  $list: null;
+  //@debug $name;
+
+  @each $colorTheme in $theme {
+    @each $colName, $color in $colorTheme {
+      @if ($colName == $name) {
+        $list: $colorTheme;
+      }
+    }
+  }
+
+  $keys: map-keys($list);
+  $n: index($keys, $name);
+
+  @if not $n {
+    @error "Color '#{$name}' not found in '#{$list}'";
+  }
+
+  $ret: if($n > $steps, nth($keys, ($n - $steps)), null);
+
+  @if not $color {
+    @return $ret;
+  } @else {
+    @return map-get($list, $ret);
+  }
+}
+
+@function darker($name, $color: false, $steps: 1) {
+  $list: null;
+  //@debug $name;
+
+  @each $colorTheme in $theme {
+    @each $colName, $color in $colorTheme {
+      @if ($colName == $name) {
+        $list: $colorTheme;
+      }
+    }
+  }
+
+  $keys: map-keys($list);
+  $n: index($keys, $name);
+
+  @if not $n {
+    @error "Color '#{$name}' not found in '#{$list}'";
+  }
+
+  $ret: if($n < length($keys), nth($keys, ($n + $steps)), null);
+
+  @if not $color {
+    @return $ret;
+  } @else {
+    @return map-get($list, $ret);
+  }
+}

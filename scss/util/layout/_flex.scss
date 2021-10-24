@@ -1,0 +1,59 @@
+@import "breakpoints";
+
+$directions: (
+        column,
+        column-reverse,
+        row,
+        row-reverse
+);
+
+@each $direction in $directions {
+  .flex-d-#{$direction} {
+    flex-direction: $direction;
+  }
+
+  @include eachBreakpoint() using($breakpoint, $px) {
+    @include media-breakpoint-up($breakpoint) {
+      body .flex-d-#{$breakpoint}-#{$direction} {
+        flex-direction: $direction;
+      }
+    }
+  }
+}
+
+
+$justifies: (
+        space-between,
+        space-around,
+        space-evenly,
+        center,
+        flex-start,
+        flex-end
+);
+
+@each $justify in $justifies {
+  .flex-j-#{$justify} {
+    justify-content: $justify;
+  }
+
+  @include eachBreakpoint() using($breakpoint, $px) {
+    @include media-breakpoint-up($breakpoint) {
+      body .flex-j-#{$breakpoint}-#{$justify} {
+        justify-content: $justify;
+      }
+    }
+  }
+}
+
+
+$alignment: (
+        center,
+        flex-start,
+        flex-end
+);
+
+@each $align in $alignment {
+  .flex-a-#{$align} {
+    align-items: $align;
+  }
+}

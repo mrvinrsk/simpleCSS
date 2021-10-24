@@ -1,0 +1,145 @@
+@import "layout/breakpoints";
+@import "colors";
+
+/* Texts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+  font-family: 'Exo 2', sans-serif;
+}
+
+pre, code {
+  font-family: 'Inconsolata', "Fira Mono", "JetBrains Mono", monospace;
+  font-size: inherit;
+}
+
+$weights: (
+        "light": 300,
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+);
+
+@each $name, $weight in $weights {
+  .fw-#{$name} {
+    font-weight: $weight;
+  }
+}
+
+$sizes: (
+        "smallest": .65rem,
+        "smaller": .8rem,
+        "small": .11rem,
+        "regular": 1.25rem,
+        "large": 1.35rem,
+        "larger": 1.65rem,
+        "largest": 1.875rem,
+        "xl": 2.5rem,
+        "2xl": 3.75rem,
+        "3xl": 4.5rem
+);
+
+@each $name, $size in $sizes {
+  body .heading-#{$name}, body .fsi-#{$name} {
+    font-size: $size;
+  }
+}
+
+@include eachBreakpoint() using($bp, $px) {
+  @each $name, $value in $sizes {
+    @include media-breakpoint-up($bp) {
+      body .fsi-#{$bp}-#{$name} {
+        font-size: $value;
+      }
+    }
+  }
+}
+
+@include eachColor() using($name, $value) {
+  body .fc-#{$name} {
+    color: $value;
+  }
+}
+
+.fc-invert {
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
+}
+
+html h1, html h2, html h3, html h4, html h5, html h6, html .heading {
+  font-family: 'Rubik', sans-serif;
+  @extend .fw-bold;
+  @extend .fsi-largest;
+  @extend .fc-main;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fs-none {
+  text-decoration: none;
+}
+
+.fs-underline {
+  text-decoration: underline;
+}
+
+.fs-italic {
+  font-style: italic;
+}
+
+:root {
+  font-family: 'K2D', serif;
+  @extend .fsi-regular;
+  @extend .fw-regular;
+  @extend .fc-gray-lightest;
+}
+
+
+$alignments: (
+        left, center, right, justify
+);
+
+.fa-left {
+  text-align: left;
+}
+
+.fa-center {
+  text-align: center;
+}
+
+.fa-right {
+  text-align: right;
+}
+
+.fa-justify {
+  text-align: justify;
+}
+
+@each $align in $alignments {
+  .fa-#{$align} {
+    text-align: $align;
+  }
+
+  @include eachBreakpoint() using($bp, $px) {
+    @include media-breakpoint-up($bp) {
+      body .fa-#{$bp}-#{$align} {
+        text-align: $align;
+      }
+    }
+  }
+}
+
+
+html body .ff-barlow {
+  font-family: 'Barlow', sans-serif;
+}
+html body .ff-exo {
+  font-family: 'Exo 2', sans-serif;
+}
+html body .ff-rubik {
+  font-family: 'Rubik', sans-serif;
+}
