@@ -1,11 +1,11 @@
 $main: (
-        "main-lightest": #fca581,
-        "main-lighter": #ff8047,
-        "main-light": #ff6b2d,
-        "main": #fc5102,
-        "main-dark": #b43800,
-        "main-darker": #8b2c01,
-        "main-darkest": #611e00
+        "main-lightest": #bf7bff,
+        "main-lighter": #b059ff,
+        "main-light": #9d29ff,
+        "main": #8c02fc,
+        "main-dark": #7000c9,
+        "main-darker": #5e00a6,
+        "main-darkest": #4b0083
 );
 
 $gray: (
@@ -17,54 +17,46 @@ $gray: (
         "gray": #323232,
         "gray-dark": #202020,
         "gray-darker": #151515,
-        "gray-darkest": #101010
+        "gray-darkest": #101010,
+        "black": #000
 );
 
 $success: (
-        "success-lightest": #5cfa50,
-        "success-lighter": #10d900,
-        "success-light": #0ca800,
-        "success": #0c8700,
-        "success-dark": #0b6800,
-        "success-darker": #055300,
-        "success-darkest": #033800
+        "success-lightest": #00de5b,
+        "success-lighter": #00bb4b,
+        "success-light": #00a241,
+        "success": #008736,
+        "success-dark": #00732d,
+        "success-darker": #005e24,
+        "success-darkest": #004f1e
 );
 
 $error: (
-        "warning-lightest": #ffe46a,
-        "warning-lighter": #ffde47,
-        "warning-light": #fdd92c,
-        "warning": #ffd500,
-        "warning-dark": #bfa000,
-        "warning-darker": #937b00,
-        "warning-darkest": #6d5d00,
+        "warning-lightest": #ffc956,
+        "warning-lighter": #ffc339,
+        "warning-light": #ffbb1a,
+        "warning": #ffb700,
+        "warning-dark": #d29900,
+        "warning-darker": #ab7c00,
+        "warning-darkest": #8f6a00,
 
-        "error-lightest": #ef7373,
-        "error-lighter": #ec4f4f,
-        "error-light": #e83131,
-        "error": #e21b1b,
-        "error-dark": #b60b0b,
-        "error-darker": #850606,
-        "error-darkest": #5e0303
+        "error-lightest": #ff4e4e,
+        "error-lighter": #ec3030,
+        "error-light": #d91515,
+        "error": #c20d0d,
+        "error-dark": #ab0808,
+        "error-darker": #8f0404,
+        "error-darkest": #770404
 );
 
 $info: (
-        "info-lightest": #44cae5,
-        "info-lighter": #21b8d7,
-        "info-light": #09a3c2,
-        "info": #048fab,
-        "info-dark": #037286,
-        "info-darker": #015869,
-        "info-darkest": #014b4b
-);
-
-$dark: (
-        "dark-lightest": #555555,
-        "dark-lighter": #444444,
-        "dark-light": #333333,
-        "dark": #202020,
-        "dark-darker": #111111,
-        "black": #000,
+        "info-lightest": #ff4fb4,
+        "info-lighter": #f835aa,
+        "info-light": #e8239b,
+        "info": #ce0f86,
+        "info-dark": #b60677,
+        "info-darker": #980264,
+        "info-darkest": #77004e
 );
 
 
@@ -73,8 +65,7 @@ $theme: (
         $gray,
         $success,
         $error,
-        $info,
-        $dark
+        $info
 );
 
 
@@ -97,7 +88,6 @@ $theme: (
 
 @function lighter($name, $color: false, $steps: 1) {
   $list: null;
-  //@debug $name;
 
   @each $colorTheme in $theme {
     @each $colName, $color in $colorTheme {
@@ -125,7 +115,6 @@ $theme: (
 
 @function darker($name, $color: false, $steps: 1) {
   $list: null;
-  //@debug $name;
 
   @each $colorTheme in $theme {
     @each $colName, $color in $colorTheme {

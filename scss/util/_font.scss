@@ -4,10 +4,6 @@
 /* Texts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
-* {
-  font-family: 'Exo 2', sans-serif;
-}
-
 pre, code {
   font-family: 'Inconsolata', "Fira Mono", "JetBrains Mono", monospace;
   font-size: inherit;
@@ -28,16 +24,17 @@ $weights: (
 }
 
 $sizes: (
-        "smallest": .65rem,
-        "smaller": .8rem,
-        "small": .11rem,
-        "regular": 1.25rem,
-        "large": 1.35rem,
-        "larger": 1.65rem,
-        "largest": 1.875rem,
-        "xl": 2.5rem,
-        "2xl": 3.75rem,
-        "3xl": 4.5rem
+        "smallest": .5rem,
+        "smaller": .6rem,
+        "small": .75rem,
+        "regular": .875rem,
+        "large": .925rem,
+        "larger": 1.175rem,
+        "largest": 1.35rem,
+        "xl": 1.5rem,
+        "2xl": 2rem,
+        "3xl": 2.5rem,
+        "4xl": 3rem
 );
 
 @each $name, $size in $sizes {
@@ -56,10 +53,17 @@ $sizes: (
   }
 }
 
+
 @include eachColor() using($name, $value) {
   body .fc-#{$name} {
     color: $value;
   }
+}
+
+* {
+  font-family: 'Rubik', sans-serif;
+  @extend .fsi-regular;
+  @extend .fc-gray;
 }
 
 .fc-invert {
@@ -68,9 +72,9 @@ $sizes: (
 }
 
 html h1, html h2, html h3, html h4, html h5, html h6, html .heading {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   @extend .fw-bold;
-  @extend .fsi-largest;
+  @extend .fsi-xl;
   @extend .fc-main;
 }
 
@@ -137,9 +141,11 @@ $alignments: (
 html body .ff-barlow {
   font-family: 'Barlow', sans-serif;
 }
+
 html body .ff-exo {
   font-family: 'Exo 2', sans-serif;
 }
+
 html body .ff-rubik {
   font-family: 'Rubik', sans-serif;
 }
