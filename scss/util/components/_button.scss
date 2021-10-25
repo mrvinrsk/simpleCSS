@@ -1,0 +1,20 @@
+@import "../colors";
+
+@mixin button() {
+  padding: .5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition-duration: .25s;
+}
+
+@include eachColor() using($name, $color) {
+  .btn-#{$name} {
+    @include button();
+    background-color: $color;
+    color: white;
+
+    &:hover {
+      transform: scale(.925);
+    }
+  }
+}

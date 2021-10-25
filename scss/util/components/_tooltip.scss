@@ -1,0 +1,69 @@
+@import "../colors";
+@import "../font";
+@import "../spacing";
+
+* + .tooltip {
+  overflow: visible !important;
+}
+
+.tooltip-wrapper {
+  cursor: help;
+
+  &:hover {
+    .tooltip {
+      display: block;
+    }
+  }
+
+  .tooltip {
+    display: none;
+    z-index: 200;
+    background-color: transparent;
+
+    max-width: 30vw;
+
+    position: absolute;
+
+    @extend .px-4;
+    @extend .py-2;
+
+    .tooltip-content {
+      @extend .px-4;
+      @extend .py-2;
+
+      @extend .bg-white-darker;
+      border-radius: 3px;
+
+      box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+      transition-duration: .25s;
+
+
+      .tooltip-title {
+        @extend .fsi-regular;
+        @extend .fc-main-dark;
+        @extend .fs-underline;
+      }
+
+      .tooltip-description {
+        @extend .fsi-small;
+        @extend .fa-justify;
+        @extend .fc-gray;
+      }
+    }
+  }
+
+  .tooltip.tooltip-dark {
+
+    .tooltip-content {
+      @extend .bg-gray-darker;
+
+      .tooltip-title {
+        @extend .fc-main-light;
+      }
+
+      .tooltip-description {
+        @extend .fc-white-darker;
+      }
+    }
+  }
+}

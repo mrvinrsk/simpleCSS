@@ -1,0 +1,24 @@
+@import "../colors";
+
+@mixin alert() {
+  padding: .65rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: .75rem;
+  width: 100%;
+}
+
+
+@include eachColor() using($name, $color) {
+  .alert-#{$name} {
+    @include alert();
+    border: 2px solid $color;
+    color: $color;
+    background-color: transparentize($color, .75);
+
+    i, a, p, span, h1, h2, h3, h4, h5, h6 {
+      color: inherit;
+    }
+  }
+}

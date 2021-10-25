@@ -1,0 +1,29 @@
+@import "util/colors";
+
+.docu-element {
+  padding: 1rem 2rem;
+  background-color: #EEE;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+  border-radius: 2px;
+}
+
+pre, code {
+  overflow-x: auto;
+}
+
+.code {
+  position: relative;
+  padding: 1rem;
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .25);
+
+  .copy {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    @extend .bg-main-dark;
+  }
+}

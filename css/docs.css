@@ -1,0 +1,208 @@
+/* Color */
+.bg-main-lightest {
+  background-color: #bf7bff;
+}
+
+.bg-main-lighter {
+  background-color: #b059ff;
+}
+
+.bg-main-light {
+  background-color: #9d29ff;
+}
+
+.bg-main {
+  background-color: #8c02fc;
+}
+
+.bg-main-dark, .code .copy {
+  background-color: #7000c9;
+}
+
+.bg-main-darker {
+  background-color: #5e00a6;
+}
+
+.bg-main-darkest {
+  background-color: #4b0083;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+.bg-white-darker {
+  background-color: #EEE;
+}
+
+.bg-gray-lightest {
+  background-color: #d5d5d5;
+}
+
+.bg-gray-lighter {
+  background-color: #b5b5b5;
+}
+
+.bg-gray-light {
+  background-color: #909090;
+}
+
+.bg-gray {
+  background-color: #323232;
+}
+
+.bg-gray-dark {
+  background-color: #202020;
+}
+
+.bg-gray-darker {
+  background-color: #151515;
+}
+
+.bg-gray-darkest {
+  background-color: #101010;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-success-lightest {
+  background-color: #00de5b;
+}
+
+.bg-success-lighter {
+  background-color: #00bb4b;
+}
+
+.bg-success-light {
+  background-color: #00a241;
+}
+
+.bg-success {
+  background-color: #008736;
+}
+
+.bg-success-dark {
+  background-color: #00732d;
+}
+
+.bg-success-darker {
+  background-color: #005e24;
+}
+
+.bg-success-darkest {
+  background-color: #004f1e;
+}
+
+.bg-warning-lightest {
+  background-color: #ffc956;
+}
+
+.bg-warning-lighter {
+  background-color: #ffc339;
+}
+
+.bg-warning-light {
+  background-color: #ffbb1a;
+}
+
+.bg-warning {
+  background-color: #ffb700;
+}
+
+.bg-warning-dark {
+  background-color: #d29900;
+}
+
+.bg-warning-darker {
+  background-color: #ab7c00;
+}
+
+.bg-warning-darkest {
+  background-color: #8f6a00;
+}
+
+.bg-error-lightest {
+  background-color: #ff4e4e;
+}
+
+.bg-error-lighter {
+  background-color: #ec3030;
+}
+
+.bg-error-light {
+  background-color: #d91515;
+}
+
+.bg-error {
+  background-color: #c20d0d;
+}
+
+.bg-error-dark {
+  background-color: #ab0808;
+}
+
+.bg-error-darker {
+  background-color: #8f0404;
+}
+
+.bg-error-darkest {
+  background-color: #770404;
+}
+
+.bg-info-lightest {
+  background-color: #ff4fb4;
+}
+
+.bg-info-lighter {
+  background-color: #f835aa;
+}
+
+.bg-info-light {
+  background-color: #e8239b;
+}
+
+.bg-info {
+  background-color: #ce0f86;
+}
+
+.bg-info-dark {
+  background-color: #b60677;
+}
+
+.bg-info-darker {
+  background-color: #980264;
+}
+
+.bg-info-darkest {
+  background-color: #77004e;
+}
+
+.docu-element {
+  padding: 1rem 2rem;
+  background-color: #EEE;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+pre, code {
+  overflow-x: auto;
+}
+
+.code {
+  position: relative;
+  padding: 1rem;
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+.code .copy {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=docs.css.map */

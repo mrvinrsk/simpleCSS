@@ -1,0 +1,34 @@
+@import "../colors";
+
+@mixin badge() {
+  padding: .175rem .475rem;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  flex-direction: row;
+  column-gap: .25rem;
+  font-size: 75%;
+}
+
+
+@include eachColor() using($name, $color) {
+  .badge-#{$name} {
+    @include badge();
+    border: 1px solid $color;
+    color: $color;
+    background-color: transparentize($color, .75);
+
+    i, a, p, span, h1, h2, h3, h4, h5, h6 {
+      color: inherit;
+    }
+
+    i {
+      display: inline-flex;
+      align-items: center;
+      align-self: center;
+      align-content: center;
+      font-size: 90%;
+    }
+  }
+}
