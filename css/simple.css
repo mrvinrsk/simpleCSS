@@ -16227,6 +16227,14 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
   color: inherit;
 }
 
+.alert-close {
+  margin-left: auto;
+  font-weight: bold;
+}
+.alert-close:hover {
+  cursor: pointer;
+}
+
 /* Color */
 .bg-main-lightest {
   background-color: #bf7bff;
@@ -18636,25 +18644,23 @@ html body .ff-rubik {
 
 .tabs {
   max-width: 50%;
-  margin: 3rem auto;
 }
 .tabs .tab-wrapper {
   display: flex;
   flex-direction: row;
+  border: 2px solid #FFF;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
 }
 .tabs .tab-wrapper .tab {
+  width: 100%;
   padding: 0.5rem 1.5rem;
   text-align: center;
   background-color: #FFF;
 }
 .tabs .tab-wrapper .tab::selection {
   background-color: transparent;
-}
-.tabs .tab-wrapper .tab:first-child {
-  border-top-left-radius: 5px;
-}
-.tabs .tab-wrapper .tab:last-child {
-  border-top-right-radius: 5px;
 }
 .tabs .tab-wrapper .tab:not([data-tab-active]) {
   background-color: #EEE;
@@ -18666,7 +18672,7 @@ html body .ff-rubik {
   height: 0;
   overflow: hidden;
   background-color: #FFF;
-  border-radius: 0 5px 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
 .tabs .tab-panel[data-tab-active] {
   height: 100%;

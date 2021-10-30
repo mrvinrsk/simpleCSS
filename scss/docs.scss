@@ -7,11 +7,17 @@
   border-radius: 2px;
 }
 
+.docu-element[data-example-centered] .example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 pre, code {
   overflow-x: auto;
 }
 
-.code {
+.code, .example {
   position: relative;
   padding: 1rem;
   border-radius: 2px;

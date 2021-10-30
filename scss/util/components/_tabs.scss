@@ -5,27 +5,23 @@ $radius: 5px;
 
 .tabs {
   max-width: 50%;
-  margin: 3rem auto;
 
   .tab-wrapper {
     display: flex;
     flex-direction: row;
+    border: 2px solid #FFF;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    overflow: hidden;
 
     .tab {
+      width: 100%;
       padding: .5rem 1.5rem;
       text-align: center;
       background-color: #FFF;
 
       &::selection {
         background-color: transparent;
-      }
-
-      &:first-child {
-        border-top-left-radius: $radius;
-      }
-
-      &:last-child {
-        border-top-right-radius: $radius;
       }
 
       &:not([data-tab-active]) {
@@ -42,7 +38,7 @@ $radius: 5px;
     height: 0;
     overflow: hidden;
     background-color: #FFF;
-    border-radius: 0 $radius $radius $radius;
+    border-radius: 0 0 $radius $radius;
     @extend .fc-gray-dark;
 
     &[data-tab-active] {

@@ -15,7 +15,7 @@
   background-color: #8c02fc;
 }
 
-.bg-main-dark, .code .copy {
+.bg-main-dark, .code .copy, .example .copy {
   background-color: #7000c9;
 }
 
@@ -186,17 +186,23 @@
   border-radius: 2px;
 }
 
+.docu-element[data-example-centered] .example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 pre, code {
   overflow-x: auto;
 }
 
-.code {
+.code, .example {
   position: relative;
   padding: 1rem;
   border-radius: 2px;
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.25);
 }
-.code .copy {
+.code .copy, .example .copy {
   position: absolute;
   right: 0;
   top: 0;
