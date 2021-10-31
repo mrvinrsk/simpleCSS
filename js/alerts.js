@@ -12,7 +12,6 @@ $(function() {
     });
 
     document.querySelectorAll('[data-alert-autoclose]').forEach((el) => {
-        console.log(el);
         setTimeout(() => {
             el.remove();
         }, el.dataset.alertAutoclose);

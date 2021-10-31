@@ -18848,13 +18848,14 @@ html body .ff-rubik {
   width: 100%;
   padding: 0.5rem 1.5rem;
   text-align: center;
-  background-color: #FFF;
+  background-color: #f5f5f5;
 }
 .tabs .tab-wrapper .tab::selection {
-  background-color: transparent;
+  user-select: none;
 }
 .tabs .tab-wrapper .tab:not([data-tab-active]) {
   background-color: #EEE;
+  color: #9D9D9D;
 }
 .tabs .tab-wrapper .tab:hover {
   cursor: pointer;
@@ -19591,6 +19592,862 @@ html body .ff-rubik {
 }
 .btn-info-darkest:hover {
   transform: scale(0.925);
+}
+
+/* Color */
+.bg-main-lightest {
+  background-color: #bf7bff;
+}
+
+.bg-main-lighter {
+  background-color: #b059ff;
+}
+
+.bg-main-light {
+  background-color: #9d29ff;
+}
+
+.bg-main {
+  background-color: #8c02fc;
+}
+
+.bg-main-dark {
+  background-color: #7000c9;
+}
+
+.bg-main-darker {
+  background-color: #5e00a6;
+}
+
+.bg-main-darkest {
+  background-color: #4b0083;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+.bg-white-darker, .tooltip-wrapper .tooltip .tooltip-content {
+  background-color: #EEE;
+}
+
+.bg-gray-lightest {
+  background-color: #d5d5d5;
+}
+
+.bg-gray-lighter {
+  background-color: #b5b5b5;
+}
+
+.bg-gray-light {
+  background-color: #909090;
+}
+
+.bg-gray {
+  background-color: #323232;
+}
+
+.bg-gray-dark {
+  background-color: #202020;
+}
+
+.bg-gray-darker, .tooltip-wrapper .tooltip.tooltip-dark .tooltip-content {
+  background-color: #151515;
+}
+
+.bg-gray-darkest {
+  background-color: #101010;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-success-lightest {
+  background-color: #00de5b;
+}
+
+.bg-success-lighter {
+  background-color: #00bb4b;
+}
+
+.bg-success-light {
+  background-color: #00a241;
+}
+
+.bg-success {
+  background-color: #008736;
+}
+
+.bg-success-dark {
+  background-color: #00732d;
+}
+
+.bg-success-darker {
+  background-color: #005e24;
+}
+
+.bg-success-darkest {
+  background-color: #004f1e;
+}
+
+.bg-warning-lightest {
+  background-color: #ffc956;
+}
+
+.bg-warning-lighter {
+  background-color: #ffc339;
+}
+
+.bg-warning-light {
+  background-color: #ffbb1a;
+}
+
+.bg-warning {
+  background-color: #ffb700;
+}
+
+.bg-warning-dark {
+  background-color: #d29900;
+}
+
+.bg-warning-darker {
+  background-color: #ab7c00;
+}
+
+.bg-warning-darkest {
+  background-color: #8f6a00;
+}
+
+.bg-error-lightest {
+  background-color: #ff4e4e;
+}
+
+.bg-error-lighter {
+  background-color: #ec3030;
+}
+
+.bg-error-light {
+  background-color: #d91515;
+}
+
+.bg-error {
+  background-color: #c20d0d;
+}
+
+.bg-error-dark {
+  background-color: #ab0808;
+}
+
+.bg-error-darker {
+  background-color: #8f0404;
+}
+
+.bg-error-darkest {
+  background-color: #770404;
+}
+
+.bg-info-lightest {
+  background-color: #ff4fb4;
+}
+
+.bg-info-lighter {
+  background-color: #f835aa;
+}
+
+.bg-info-light {
+  background-color: #e8239b;
+}
+
+.bg-info {
+  background-color: #ce0f86;
+}
+
+.bg-info-dark {
+  background-color: #b60677;
+}
+
+.bg-info-darker {
+  background-color: #980264;
+}
+
+.bg-info-darkest {
+  background-color: #77004e;
+}
+
+.input-main-lightest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #bf7bff;
+  color: #bf7bff;
+}
+.input-main-lightest ::placeholder {
+  color: rgba(191, 123, 255, 0.5);
+}
+
+.input-main-lighter {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #b059ff;
+  color: #b059ff;
+}
+.input-main-lighter ::placeholder {
+  color: rgba(176, 89, 255, 0.5);
+}
+
+.input-main-light {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #9d29ff;
+  color: #9d29ff;
+}
+.input-main-light ::placeholder {
+  color: rgba(157, 41, 255, 0.5);
+}
+
+.input-main {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #8c02fc;
+  color: #8c02fc;
+}
+.input-main ::placeholder {
+  color: rgba(140, 2, 252, 0.5);
+}
+
+.input-main-dark {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #7000c9;
+  color: #7000c9;
+}
+.input-main-dark ::placeholder {
+  color: rgba(112, 0, 201, 0.5);
+}
+
+.input-main-darker {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #5e00a6;
+  color: #5e00a6;
+}
+.input-main-darker ::placeholder {
+  color: rgba(94, 0, 166, 0.5);
+}
+
+.input-main-darkest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #4b0083;
+  color: #4b0083;
+}
+.input-main-darkest ::placeholder {
+  color: rgba(75, 0, 131, 0.5);
+}
+
+.input-white {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #FFF;
+  color: #FFF;
+}
+.input-white ::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-white-darker {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #EEE;
+  color: #EEE;
+}
+.input-white-darker ::placeholder {
+  color: rgba(238, 238, 238, 0.5);
+}
+
+.input-gray-lightest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #d5d5d5;
+  color: #d5d5d5;
+}
+.input-gray-lightest ::placeholder {
+  color: rgba(213, 213, 213, 0.5);
+}
+
+.input-gray-lighter {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #b5b5b5;
+  color: #b5b5b5;
+}
+.input-gray-lighter ::placeholder {
+  color: rgba(181, 181, 181, 0.5);
+}
+
+.input-gray-light {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #909090;
+  color: #909090;
+}
+.input-gray-light ::placeholder {
+  color: rgba(144, 144, 144, 0.5);
+}
+
+.input-gray {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #323232;
+  color: #323232;
+}
+.input-gray ::placeholder {
+  color: rgba(50, 50, 50, 0.5);
+}
+
+.input-gray-dark {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #202020;
+  color: #202020;
+}
+.input-gray-dark ::placeholder {
+  color: rgba(32, 32, 32, 0.5);
+}
+
+.input-gray-darker {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #151515;
+  color: #151515;
+}
+.input-gray-darker ::placeholder {
+  color: rgba(21, 21, 21, 0.5);
+}
+
+.input-gray-darkest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #101010;
+  color: #101010;
+}
+.input-gray-darkest ::placeholder {
+  color: rgba(16, 16, 16, 0.5);
+}
+
+.input-black {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #000;
+  color: #000;
+}
+.input-black ::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.input-success-lightest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #00de5b;
+  color: #00de5b;
+}
+.input-success-lightest ::placeholder {
+  color: rgba(0, 222, 91, 0.5);
+}
+
+.input-success-lighter {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #00bb4b;
+  color: #00bb4b;
+}
+.input-success-lighter ::placeholder {
+  color: rgba(0, 187, 75, 0.5);
+}
+
+.input-success-light {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #00a241;
+  color: #00a241;
+}
+.input-success-light ::placeholder {
+  color: rgba(0, 162, 65, 0.5);
+}
+
+.input-success {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #008736;
+  color: #008736;
+}
+.input-success ::placeholder {
+  color: rgba(0, 135, 54, 0.5);
+}
+
+.input-success-dark {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #00732d;
+  color: #00732d;
+}
+.input-success-dark ::placeholder {
+  color: rgba(0, 115, 45, 0.5);
+}
+
+.input-success-darker {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #005e24;
+  color: #005e24;
+}
+.input-success-darker ::placeholder {
+  color: rgba(0, 94, 36, 0.5);
+}
+
+.input-success-darkest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #004f1e;
+  color: #004f1e;
+}
+.input-success-darkest ::placeholder {
+  color: rgba(0, 79, 30, 0.5);
+}
+
+.input-warning-lightest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #ffc956;
+  color: #ffc956;
+}
+.input-warning-lightest ::placeholder {
+  color: rgba(255, 201, 86, 0.5);
+}
+
+.input-warning-lighter {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #ffc339;
+  color: #ffc339;
+}
+.input-warning-lighter ::placeholder {
+  color: rgba(255, 195, 57, 0.5);
+}
+
+.input-warning-light {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #ffbb1a;
+  color: #ffbb1a;
+}
+.input-warning-light ::placeholder {
+  color: rgba(255, 187, 26, 0.5);
+}
+
+.input-warning {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #ffb700;
+  color: #ffb700;
+}
+.input-warning ::placeholder {
+  color: rgba(255, 183, 0, 0.5);
+}
+
+.input-warning-dark {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #d29900;
+  color: #d29900;
+}
+.input-warning-dark ::placeholder {
+  color: rgba(210, 153, 0, 0.5);
+}
+
+.input-warning-darker {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #ab7c00;
+  color: #ab7c00;
+}
+.input-warning-darker ::placeholder {
+  color: rgba(171, 124, 0, 0.5);
+}
+
+.input-warning-darkest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #8f6a00;
+  color: #8f6a00;
+}
+.input-warning-darkest ::placeholder {
+  color: rgba(143, 106, 0, 0.5);
+}
+
+.input-error-lightest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #ff4e4e;
+  color: #ff4e4e;
+}
+.input-error-lightest ::placeholder {
+  color: rgba(255, 78, 78, 0.5);
+}
+
+.input-error-lighter {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #ec3030;
+  color: #ec3030;
+}
+.input-error-lighter ::placeholder {
+  color: rgba(236, 48, 48, 0.5);
+}
+
+.input-error-light {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #d91515;
+  color: #d91515;
+}
+.input-error-light ::placeholder {
+  color: rgba(217, 21, 21, 0.5);
+}
+
+.input-error {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #c20d0d;
+  color: #c20d0d;
+}
+.input-error ::placeholder {
+  color: rgba(194, 13, 13, 0.5);
+}
+
+.input-error-dark {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #ab0808;
+  color: #ab0808;
+}
+.input-error-dark ::placeholder {
+  color: rgba(171, 8, 8, 0.5);
+}
+
+.input-error-darker {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #8f0404;
+  color: #8f0404;
+}
+.input-error-darker ::placeholder {
+  color: rgba(143, 4, 4, 0.5);
+}
+
+.input-error-darkest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #770404;
+  color: #770404;
+}
+.input-error-darkest ::placeholder {
+  color: rgba(119, 4, 4, 0.5);
+}
+
+.input-info-lightest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #ff4fb4;
+  color: #ff4fb4;
+}
+.input-info-lightest ::placeholder {
+  color: rgba(255, 79, 180, 0.5);
+}
+
+.input-info-lighter {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #f835aa;
+  color: #f835aa;
+}
+.input-info-lighter ::placeholder {
+  color: rgba(248, 53, 170, 0.5);
+}
+
+.input-info-light {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #e8239b;
+  color: #e8239b;
+}
+.input-info-light ::placeholder {
+  color: rgba(232, 35, 155, 0.5);
+}
+
+.input-info {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #ce0f86;
+  color: #ce0f86;
+}
+.input-info ::placeholder {
+  color: rgba(206, 15, 134, 0.5);
+}
+
+.input-info-dark {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #b60677;
+  color: #b60677;
+}
+.input-info-dark ::placeholder {
+  color: rgba(182, 6, 119, 0.5);
+}
+
+.input-info-darker {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #980264;
+  color: #980264;
+}
+.input-info-darker ::placeholder {
+  color: rgba(152, 2, 100, 0.5);
+}
+
+.input-info-darkest {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+  border-color: #77004e;
+  color: #77004e;
+}
+.input-info-darkest ::placeholder {
+  color: rgba(119, 0, 78, 0.5);
 }
 
 * {

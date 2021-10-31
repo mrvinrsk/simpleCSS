@@ -1,0 +1,24 @@
+@import "../../colors";
+
+@mixin input() {
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  border-width: 1px;
+  outline: none;
+  min-width: 25%;
+  max-width: 100%;
+  background-color: transparent;
+}
+
+
+@include eachColor() using($name, $color) {
+  .input-#{$name} {
+    @include input();
+    border-color: $color;
+    color: $color;
+
+    ::placeholder {
+      color: transparentize($color, .5);
+    }
+  }
+}

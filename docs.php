@@ -18,6 +18,7 @@
     <script src="js/simple.js"></script>
     <script src="js/alerts.js"></script>
     <script src="js/tabs.js"></script>
+    <script src="js/inputs.js"></script>
 </head>
 <body class="bg-main-dark">
 
@@ -48,19 +49,19 @@ docu-tip: Tip (under code example).
     <div class="d-flex flex-d-column gy-3 gy-lg-5">
         <div class="docu-element" data-docu-title="Alert"
              data-docu-description="Alerts are a practical way to inform the user of your website about completed processes, errors, or similar."
-             data-docu-colorable data-docu-needs-js>
-            <div class="example">
-                <div class="alert-main mb-1">
+             data-docu-colorable data-docu-part-js>
+            <div class="example d-flex flex-d-column gy-3">
+                <div class="alert-main">
                     <i class="bi bi-info-circle-fill"></i>
                     <p>This is a simple alert! You can use it for barely everything.</p>
                 </div>
 
-                <div class="alert-error mb-1" data-alert-closable>
+                <div class="alert-error" data-alert-closable>
                     <i class="bi bi-info-circle-fill"></i>
-                    <p>This alert is closable by clicking on the 'X'.</p>
+                    <p>This alert is closable by clicking on the cross.</p>
                 </div>
 
-                <div class="alert-success mb-1" data-alert-autoclose="10000">
+                <div class="alert-success" data-alert-autoclose="10000">
                     <i class="bi bi-info-circle-fill"></i>
                     <p>This alert will dismiss automatically after 10.000ms (10s).</p>
                 </div>
@@ -139,6 +140,16 @@ docu-tip: Tip (under code example).
                 </div>
             </div>
         </div>
+
+        <div class="docu-element" data-docu-title="Input"
+             data-docu-description="A simple input field for forms."
+             data-docu-colorable data-example-centered data-docu-part-js>
+            <div class="example flex-d-column gy-3">
+                <input class="input-main" type="text" name="if" placeholder="Inputfield">
+                <input class="input-main" type="text" name="if2" placeholder="Inputfield">
+                <p class="d-block fc-error" data-input-remove="if if2">This text will get removed if you type in the field.</p>
+            </div>
+        </div>
     </div>
 </main>
 
@@ -158,7 +169,10 @@ docu-tip: Tip (under code example).
             badges += "<div style='display: inline-block;' class='tooltip-wrapper'><span class='badge-success m-0'><i class='bi bi-brush-fill'></i>Colorable</span><div class='tooltip'><div class='tooltip-content'><p class='tooltip-title'>Element is customizable</p><p class='tooltip-description'>You have the option to tint this element. Just use the <code>" + docuelement.dataset.docuTitle.toLowerCase().replaceAll(' ', '-') + "-[color]</code> class instead of the <code>" + docuelement.dataset.docuTitle.toLowerCase().replaceAll(' ', '-') + "</code> class. <code>[color]</code> corresponds in this case to a color from the color scheme of Upgrade, which is also used for text colors and the like. Example: main-dark</p></div></div></div>";
         }
         if ("docuNeedsJs" in docuelement.dataset) {
-            badges += "<div style='display: inline-block;' class='tooltip-wrapper'><span class='badge-warning-dark m-0'><i class='bi bi-gear-fill'></i>JavaScript</span><div class='tooltip'><div class='tooltip-content'><p class='tooltip-title'>May require JavaScript</p><p class='tooltip-description'>Some of the functionalities of this element may require you to include the <code>" + docuelement.dataset.docuTitle.toLowerCase().replaceAll(' ', '-') + "s.js</code> file, located in the <code>/js</code> folder of this framework, using a script tag.</p></div></div></div>";
+            badges += "<div style='display: inline-block;' class='tooltip-wrapper'><span class='badge-warning-dark m-0'><i class='bi bi-gear-fill'></i>JavaScript</span><div class='tooltip'><div class='tooltip-content'><p class='tooltip-title'>Requires JavaScript</p><p class='tooltip-description'>This element will only work if you include the <code>" + docuelement.dataset.docuTitle.toLowerCase().replaceAll(' ', '-') + "s.js</code> file, located in the <code>/js</code> folder of this framework, using a script tag.</p></div></div></div>";
+        }
+        if ("docuPartJs" in docuelement.dataset) {
+            badges += "<div style='display: inline-block;' class='tooltip-wrapper'><span class='badge-warning-dark m-0'><i class='bi bi-gear-fill'></i>(JavaScript)</span><div class='tooltip'><div class='tooltip-content'><p class='tooltip-title'>May require JavaScript</p><p class='tooltip-description'>Some of the functionalities of this element may require you to include the <code>" + docuelement.dataset.docuTitle.toLowerCase().replaceAll(' ', '-') + "s.js</code> file, located in the <code>/js</code> folder of this framework, using a script tag.</p></div></div></div>";
         }
         if ("docuBeta" in docuelement.dataset) {
             badges += "<div style='display: inline-block;' class='tooltip-wrapper'><span class='badge-error-lighter m-0'><i class='bi bi-bug-fill'></i>Beta</span><div class='tooltip'><div class='tooltip-content'><p class='tooltip-title'>In Beta State</p><p class='tooltip-description'>This element is currently under development and therefore should not be used on public pages due to possible bugs.</p></div></div></div>";
@@ -203,7 +217,6 @@ docu-tip: Tip (under code example).
     });
 </script>
 
-<script src="../../../assets/js/framework.js" defer></script>
 
 </body>
 </html>

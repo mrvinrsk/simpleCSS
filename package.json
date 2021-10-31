@@ -1,6 +1,6 @@
 {
-  "name": "simplecss",
-  "version": "1.0.0",
+  "name": "@mrvinrsk/simplecss",
+  "version": "1.0.5",
   "description": "Another simple (S)CSS Framework made by Marvin Roßkothen",
   "main": "index.js",
   "scripts": {
