@@ -1,8 +1,8 @@
 $(function() {
     document.querySelectorAll('[data-alert-closable]').forEach((el) => {
-        const close = document.createElement('span');
+        const close = document.createElement('img');
 
-        close.innerText = "X";
+        close.src = "../img/cross.svg";
         close.classList.add('alert-close');
         close.onclick = function() {
             close.closest('[data-alert-closable]').remove();

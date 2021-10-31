@@ -10,9 +10,12 @@ THE FOLLOWING CODE PASSAGE IS NOT BY ME; IT IS FROM BOOTSTRAP:
 https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 **/
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Fira+Mono&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Fira+Mono&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Fira+Mono&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 .box-sm {
   margin: auto;
   max-width: 576px;
@@ -7216,7 +7219,7 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 
 /* Texts */
 pre, code {
-  font-family: "Fira Mono", "JetBrains Mono", monospace;
+  font-family: "Ubuntu Mono", "JetBrains Mono", monospace;
   font-size: inherit;
 }
 
@@ -8362,7 +8365,7 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 
 /* Texts */
 pre, code {
-  font-family: "Fira Mono", "JetBrains Mono", monospace;
+  font-family: "Ubuntu Mono", "JetBrains Mono", monospace;
   font-size: inherit;
 }
 
@@ -15552,7 +15555,14 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
   background-color: #77004e;
 }
 
+/**
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+THE FOLLOWING CODE PASSAGE IS NOT BY ME; IT IS FROM BOOTSTRAP:
+https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+**/
 .alert-main-lightest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15566,8 +15576,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-main-lightest i, .alert-main-lightest a, .alert-main-lightest p, .alert-main-lightest span, .alert-main-lightest h1, .alert-main-lightest h2, .alert-main-lightest h3, .alert-main-lightest h4, .alert-main-lightest h5, .alert-main-lightest h6 {
   color: inherit;
 }
+.alert-main-lightest .alert-close {
+  fill: #bf7bff;
+}
 
 .alert-main-lighter {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15581,8 +15595,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-main-lighter i, .alert-main-lighter a, .alert-main-lighter p, .alert-main-lighter span, .alert-main-lighter h1, .alert-main-lighter h2, .alert-main-lighter h3, .alert-main-lighter h4, .alert-main-lighter h5, .alert-main-lighter h6 {
   color: inherit;
 }
+.alert-main-lighter .alert-close {
+  fill: #b059ff;
+}
 
 .alert-main-light {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15596,8 +15614,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-main-light i, .alert-main-light a, .alert-main-light p, .alert-main-light span, .alert-main-light h1, .alert-main-light h2, .alert-main-light h3, .alert-main-light h4, .alert-main-light h5, .alert-main-light h6 {
   color: inherit;
 }
+.alert-main-light .alert-close {
+  fill: #9d29ff;
+}
 
 .alert-main {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15611,8 +15633,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-main i, .alert-main a, .alert-main p, .alert-main span, .alert-main h1, .alert-main h2, .alert-main h3, .alert-main h4, .alert-main h5, .alert-main h6 {
   color: inherit;
 }
+.alert-main .alert-close {
+  fill: #8c02fc;
+}
 
 .alert-main-dark {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15626,8 +15652,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-main-dark i, .alert-main-dark a, .alert-main-dark p, .alert-main-dark span, .alert-main-dark h1, .alert-main-dark h2, .alert-main-dark h3, .alert-main-dark h4, .alert-main-dark h5, .alert-main-dark h6 {
   color: inherit;
 }
+.alert-main-dark .alert-close {
+  fill: #7000c9;
+}
 
 .alert-main-darker {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15641,8 +15671,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-main-darker i, .alert-main-darker a, .alert-main-darker p, .alert-main-darker span, .alert-main-darker h1, .alert-main-darker h2, .alert-main-darker h3, .alert-main-darker h4, .alert-main-darker h5, .alert-main-darker h6 {
   color: inherit;
 }
+.alert-main-darker .alert-close {
+  fill: #5e00a6;
+}
 
 .alert-main-darkest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15656,8 +15690,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-main-darkest i, .alert-main-darkest a, .alert-main-darkest p, .alert-main-darkest span, .alert-main-darkest h1, .alert-main-darkest h2, .alert-main-darkest h3, .alert-main-darkest h4, .alert-main-darkest h5, .alert-main-darkest h6 {
   color: inherit;
 }
+.alert-main-darkest .alert-close {
+  fill: #4b0083;
+}
 
 .alert-white {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15671,8 +15709,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-white i, .alert-white a, .alert-white p, .alert-white span, .alert-white h1, .alert-white h2, .alert-white h3, .alert-white h4, .alert-white h5, .alert-white h6 {
   color: inherit;
 }
+.alert-white .alert-close {
+  fill: #FFF;
+}
 
 .alert-white-darker {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15686,8 +15728,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-white-darker i, .alert-white-darker a, .alert-white-darker p, .alert-white-darker span, .alert-white-darker h1, .alert-white-darker h2, .alert-white-darker h3, .alert-white-darker h4, .alert-white-darker h5, .alert-white-darker h6 {
   color: inherit;
 }
+.alert-white-darker .alert-close {
+  fill: #EEE;
+}
 
 .alert-gray-lightest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15701,8 +15747,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-gray-lightest i, .alert-gray-lightest a, .alert-gray-lightest p, .alert-gray-lightest span, .alert-gray-lightest h1, .alert-gray-lightest h2, .alert-gray-lightest h3, .alert-gray-lightest h4, .alert-gray-lightest h5, .alert-gray-lightest h6 {
   color: inherit;
 }
+.alert-gray-lightest .alert-close {
+  fill: #d5d5d5;
+}
 
 .alert-gray-lighter {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15716,8 +15766,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-gray-lighter i, .alert-gray-lighter a, .alert-gray-lighter p, .alert-gray-lighter span, .alert-gray-lighter h1, .alert-gray-lighter h2, .alert-gray-lighter h3, .alert-gray-lighter h4, .alert-gray-lighter h5, .alert-gray-lighter h6 {
   color: inherit;
 }
+.alert-gray-lighter .alert-close {
+  fill: #b5b5b5;
+}
 
 .alert-gray-light {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15731,8 +15785,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-gray-light i, .alert-gray-light a, .alert-gray-light p, .alert-gray-light span, .alert-gray-light h1, .alert-gray-light h2, .alert-gray-light h3, .alert-gray-light h4, .alert-gray-light h5, .alert-gray-light h6 {
   color: inherit;
 }
+.alert-gray-light .alert-close {
+  fill: #909090;
+}
 
 .alert-gray {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15746,8 +15804,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-gray i, .alert-gray a, .alert-gray p, .alert-gray span, .alert-gray h1, .alert-gray h2, .alert-gray h3, .alert-gray h4, .alert-gray h5, .alert-gray h6 {
   color: inherit;
 }
+.alert-gray .alert-close {
+  fill: #323232;
+}
 
 .alert-gray-dark {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15761,8 +15823,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-gray-dark i, .alert-gray-dark a, .alert-gray-dark p, .alert-gray-dark span, .alert-gray-dark h1, .alert-gray-dark h2, .alert-gray-dark h3, .alert-gray-dark h4, .alert-gray-dark h5, .alert-gray-dark h6 {
   color: inherit;
 }
+.alert-gray-dark .alert-close {
+  fill: #202020;
+}
 
 .alert-gray-darker {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15776,8 +15842,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-gray-darker i, .alert-gray-darker a, .alert-gray-darker p, .alert-gray-darker span, .alert-gray-darker h1, .alert-gray-darker h2, .alert-gray-darker h3, .alert-gray-darker h4, .alert-gray-darker h5, .alert-gray-darker h6 {
   color: inherit;
 }
+.alert-gray-darker .alert-close {
+  fill: #151515;
+}
 
 .alert-gray-darkest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15791,8 +15861,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-gray-darkest i, .alert-gray-darkest a, .alert-gray-darkest p, .alert-gray-darkest span, .alert-gray-darkest h1, .alert-gray-darkest h2, .alert-gray-darkest h3, .alert-gray-darkest h4, .alert-gray-darkest h5, .alert-gray-darkest h6 {
   color: inherit;
 }
+.alert-gray-darkest .alert-close {
+  fill: #101010;
+}
 
 .alert-black {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15806,8 +15880,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-black i, .alert-black a, .alert-black p, .alert-black span, .alert-black h1, .alert-black h2, .alert-black h3, .alert-black h4, .alert-black h5, .alert-black h6 {
   color: inherit;
 }
+.alert-black .alert-close {
+  fill: #000;
+}
 
 .alert-success-lightest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15821,8 +15899,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-success-lightest i, .alert-success-lightest a, .alert-success-lightest p, .alert-success-lightest span, .alert-success-lightest h1, .alert-success-lightest h2, .alert-success-lightest h3, .alert-success-lightest h4, .alert-success-lightest h5, .alert-success-lightest h6 {
   color: inherit;
 }
+.alert-success-lightest .alert-close {
+  fill: #00de5b;
+}
 
 .alert-success-lighter {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15836,8 +15918,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-success-lighter i, .alert-success-lighter a, .alert-success-lighter p, .alert-success-lighter span, .alert-success-lighter h1, .alert-success-lighter h2, .alert-success-lighter h3, .alert-success-lighter h4, .alert-success-lighter h5, .alert-success-lighter h6 {
   color: inherit;
 }
+.alert-success-lighter .alert-close {
+  fill: #00bb4b;
+}
 
 .alert-success-light {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15851,8 +15937,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-success-light i, .alert-success-light a, .alert-success-light p, .alert-success-light span, .alert-success-light h1, .alert-success-light h2, .alert-success-light h3, .alert-success-light h4, .alert-success-light h5, .alert-success-light h6 {
   color: inherit;
 }
+.alert-success-light .alert-close {
+  fill: #00a241;
+}
 
 .alert-success {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15866,8 +15956,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-success i, .alert-success a, .alert-success p, .alert-success span, .alert-success h1, .alert-success h2, .alert-success h3, .alert-success h4, .alert-success h5, .alert-success h6 {
   color: inherit;
 }
+.alert-success .alert-close {
+  fill: #008736;
+}
 
 .alert-success-dark {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15881,8 +15975,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-success-dark i, .alert-success-dark a, .alert-success-dark p, .alert-success-dark span, .alert-success-dark h1, .alert-success-dark h2, .alert-success-dark h3, .alert-success-dark h4, .alert-success-dark h5, .alert-success-dark h6 {
   color: inherit;
 }
+.alert-success-dark .alert-close {
+  fill: #00732d;
+}
 
 .alert-success-darker {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15896,8 +15994,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-success-darker i, .alert-success-darker a, .alert-success-darker p, .alert-success-darker span, .alert-success-darker h1, .alert-success-darker h2, .alert-success-darker h3, .alert-success-darker h4, .alert-success-darker h5, .alert-success-darker h6 {
   color: inherit;
 }
+.alert-success-darker .alert-close {
+  fill: #005e24;
+}
 
 .alert-success-darkest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15911,8 +16013,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-success-darkest i, .alert-success-darkest a, .alert-success-darkest p, .alert-success-darkest span, .alert-success-darkest h1, .alert-success-darkest h2, .alert-success-darkest h3, .alert-success-darkest h4, .alert-success-darkest h5, .alert-success-darkest h6 {
   color: inherit;
 }
+.alert-success-darkest .alert-close {
+  fill: #004f1e;
+}
 
 .alert-warning-lightest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15926,8 +16032,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-warning-lightest i, .alert-warning-lightest a, .alert-warning-lightest p, .alert-warning-lightest span, .alert-warning-lightest h1, .alert-warning-lightest h2, .alert-warning-lightest h3, .alert-warning-lightest h4, .alert-warning-lightest h5, .alert-warning-lightest h6 {
   color: inherit;
 }
+.alert-warning-lightest .alert-close {
+  fill: #ffc956;
+}
 
 .alert-warning-lighter {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15941,8 +16051,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-warning-lighter i, .alert-warning-lighter a, .alert-warning-lighter p, .alert-warning-lighter span, .alert-warning-lighter h1, .alert-warning-lighter h2, .alert-warning-lighter h3, .alert-warning-lighter h4, .alert-warning-lighter h5, .alert-warning-lighter h6 {
   color: inherit;
 }
+.alert-warning-lighter .alert-close {
+  fill: #ffc339;
+}
 
 .alert-warning-light {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15956,8 +16070,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-warning-light i, .alert-warning-light a, .alert-warning-light p, .alert-warning-light span, .alert-warning-light h1, .alert-warning-light h2, .alert-warning-light h3, .alert-warning-light h4, .alert-warning-light h5, .alert-warning-light h6 {
   color: inherit;
 }
+.alert-warning-light .alert-close {
+  fill: #ffbb1a;
+}
 
 .alert-warning {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15971,8 +16089,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-warning i, .alert-warning a, .alert-warning p, .alert-warning span, .alert-warning h1, .alert-warning h2, .alert-warning h3, .alert-warning h4, .alert-warning h5, .alert-warning h6 {
   color: inherit;
 }
+.alert-warning .alert-close {
+  fill: #ffb700;
+}
 
 .alert-warning-dark {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -15986,8 +16108,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-warning-dark i, .alert-warning-dark a, .alert-warning-dark p, .alert-warning-dark span, .alert-warning-dark h1, .alert-warning-dark h2, .alert-warning-dark h3, .alert-warning-dark h4, .alert-warning-dark h5, .alert-warning-dark h6 {
   color: inherit;
 }
+.alert-warning-dark .alert-close {
+  fill: #d29900;
+}
 
 .alert-warning-darker {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16001,8 +16127,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-warning-darker i, .alert-warning-darker a, .alert-warning-darker p, .alert-warning-darker span, .alert-warning-darker h1, .alert-warning-darker h2, .alert-warning-darker h3, .alert-warning-darker h4, .alert-warning-darker h5, .alert-warning-darker h6 {
   color: inherit;
 }
+.alert-warning-darker .alert-close {
+  fill: #ab7c00;
+}
 
 .alert-warning-darkest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16016,8 +16146,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-warning-darkest i, .alert-warning-darkest a, .alert-warning-darkest p, .alert-warning-darkest span, .alert-warning-darkest h1, .alert-warning-darkest h2, .alert-warning-darkest h3, .alert-warning-darkest h4, .alert-warning-darkest h5, .alert-warning-darkest h6 {
   color: inherit;
 }
+.alert-warning-darkest .alert-close {
+  fill: #8f6a00;
+}
 
 .alert-error-lightest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16031,8 +16165,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-error-lightest i, .alert-error-lightest a, .alert-error-lightest p, .alert-error-lightest span, .alert-error-lightest h1, .alert-error-lightest h2, .alert-error-lightest h3, .alert-error-lightest h4, .alert-error-lightest h5, .alert-error-lightest h6 {
   color: inherit;
 }
+.alert-error-lightest .alert-close {
+  fill: #ff4e4e;
+}
 
 .alert-error-lighter {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16046,8 +16184,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-error-lighter i, .alert-error-lighter a, .alert-error-lighter p, .alert-error-lighter span, .alert-error-lighter h1, .alert-error-lighter h2, .alert-error-lighter h3, .alert-error-lighter h4, .alert-error-lighter h5, .alert-error-lighter h6 {
   color: inherit;
 }
+.alert-error-lighter .alert-close {
+  fill: #ec3030;
+}
 
 .alert-error-light {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16061,8 +16203,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-error-light i, .alert-error-light a, .alert-error-light p, .alert-error-light span, .alert-error-light h1, .alert-error-light h2, .alert-error-light h3, .alert-error-light h4, .alert-error-light h5, .alert-error-light h6 {
   color: inherit;
 }
+.alert-error-light .alert-close {
+  fill: #d91515;
+}
 
 .alert-error {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16076,8 +16222,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-error i, .alert-error a, .alert-error p, .alert-error span, .alert-error h1, .alert-error h2, .alert-error h3, .alert-error h4, .alert-error h5, .alert-error h6 {
   color: inherit;
 }
+.alert-error .alert-close {
+  fill: #c20d0d;
+}
 
 .alert-error-dark {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16091,8 +16241,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-error-dark i, .alert-error-dark a, .alert-error-dark p, .alert-error-dark span, .alert-error-dark h1, .alert-error-dark h2, .alert-error-dark h3, .alert-error-dark h4, .alert-error-dark h5, .alert-error-dark h6 {
   color: inherit;
 }
+.alert-error-dark .alert-close {
+  fill: #ab0808;
+}
 
 .alert-error-darker {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16106,8 +16260,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-error-darker i, .alert-error-darker a, .alert-error-darker p, .alert-error-darker span, .alert-error-darker h1, .alert-error-darker h2, .alert-error-darker h3, .alert-error-darker h4, .alert-error-darker h5, .alert-error-darker h6 {
   color: inherit;
 }
+.alert-error-darker .alert-close {
+  fill: #8f0404;
+}
 
 .alert-error-darkest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16121,8 +16279,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-error-darkest i, .alert-error-darkest a, .alert-error-darkest p, .alert-error-darkest span, .alert-error-darkest h1, .alert-error-darkest h2, .alert-error-darkest h3, .alert-error-darkest h4, .alert-error-darkest h5, .alert-error-darkest h6 {
   color: inherit;
 }
+.alert-error-darkest .alert-close {
+  fill: #770404;
+}
 
 .alert-info-lightest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16136,8 +16298,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-info-lightest i, .alert-info-lightest a, .alert-info-lightest p, .alert-info-lightest span, .alert-info-lightest h1, .alert-info-lightest h2, .alert-info-lightest h3, .alert-info-lightest h4, .alert-info-lightest h5, .alert-info-lightest h6 {
   color: inherit;
 }
+.alert-info-lightest .alert-close {
+  fill: #ff4fb4;
+}
 
 .alert-info-lighter {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16151,8 +16317,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-info-lighter i, .alert-info-lighter a, .alert-info-lighter p, .alert-info-lighter span, .alert-info-lighter h1, .alert-info-lighter h2, .alert-info-lighter h3, .alert-info-lighter h4, .alert-info-lighter h5, .alert-info-lighter h6 {
   color: inherit;
 }
+.alert-info-lighter .alert-close {
+  fill: #f835aa;
+}
 
 .alert-info-light {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16166,8 +16336,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-info-light i, .alert-info-light a, .alert-info-light p, .alert-info-light span, .alert-info-light h1, .alert-info-light h2, .alert-info-light h3, .alert-info-light h4, .alert-info-light h5, .alert-info-light h6 {
   color: inherit;
 }
+.alert-info-light .alert-close {
+  fill: #e8239b;
+}
 
 .alert-info {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16181,8 +16355,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-info i, .alert-info a, .alert-info p, .alert-info span, .alert-info h1, .alert-info h2, .alert-info h3, .alert-info h4, .alert-info h5, .alert-info h6 {
   color: inherit;
 }
+.alert-info .alert-close {
+  fill: #ce0f86;
+}
 
 .alert-info-dark {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16196,8 +16374,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-info-dark i, .alert-info-dark a, .alert-info-dark p, .alert-info-dark span, .alert-info-dark h1, .alert-info-dark h2, .alert-info-dark h3, .alert-info-dark h4, .alert-info-dark h5, .alert-info-dark h6 {
   color: inherit;
 }
+.alert-info-dark .alert-close {
+  fill: #b60677;
+}
 
 .alert-info-darker {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16211,8 +16393,12 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-info-darker i, .alert-info-darker a, .alert-info-darker p, .alert-info-darker span, .alert-info-darker h1, .alert-info-darker h2, .alert-info-darker h3, .alert-info-darker h4, .alert-info-darker h5, .alert-info-darker h6 {
   color: inherit;
 }
+.alert-info-darker .alert-close {
+  fill: #980264;
+}
 
 .alert-info-darkest {
+  position: relative;
   padding: 0.65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -16226,15 +16412,23 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 .alert-info-darkest i, .alert-info-darkest a, .alert-info-darkest p, .alert-info-darkest span, .alert-info-darkest h1, .alert-info-darkest h2, .alert-info-darkest h3, .alert-info-darkest h4, .alert-info-darkest h5, .alert-info-darkest h6 {
   color: inherit;
 }
+.alert-info-darkest .alert-close {
+  fill: #77004e;
+}
 
 .alert-close {
   margin-left: auto;
-  font-weight: bold;
+  height: 14px;
 }
 .alert-close:hover {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  html .alert-close {
+    height: 10px;
+  }
+}
 /* Color */
 .bg-main-lightest {
   background-color: #bf7bff;
@@ -17866,7 +18060,7 @@ https://github.com/twbs/bootstrap/blob/main/scss/mixins/_breakpoints.scss
 
 /* Texts */
 pre, code {
-  font-family: "Fira Mono", "JetBrains Mono", monospace;
+  font-family: "Ubuntu Mono", "JetBrains Mono", monospace;
   font-size: inherit;
 }
 
@@ -18642,9 +18836,6 @@ html body .ff-rubik {
   font-family: "Rubik", sans-serif;
 }
 
-.tabs {
-  max-width: 50%;
-}
 .tabs .tab-wrapper {
   display: flex;
   flex-direction: row;

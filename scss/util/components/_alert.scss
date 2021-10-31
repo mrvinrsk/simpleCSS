@@ -1,6 +1,8 @@
 @import "../colors";
+@import "../layout/breakpoints";
 
 @mixin alert() {
+  position: relative;
   padding: .65rem 1rem;
   display: flex;
   flex-direction: row;
@@ -20,14 +22,24 @@
     i, a, p, span, h1, h2, h3, h4, h5, h6 {
       color: inherit;
     }
+
+    .alert-close {
+      fill: $color;
+    }
   }
 }
 
 .alert-close {
   margin-left: auto;
-  font-weight: bold;
+  height: 14px;
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html .alert-close {
+    height: 10px;
   }
 }

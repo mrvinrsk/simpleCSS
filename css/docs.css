@@ -192,6 +192,13 @@
   align-items: center;
 }
 
+.tooltip-description code {
+  font-size: inherit;
+  padding: 0.1rem 0.25rem;
+  background-color: #D3D3D3;
+  border-radius: 3px;
+}
+
 pre, code {
   overflow-x: auto;
 }

@@ -35,7 +35,7 @@ docu-tip: Tip (under code example).
 
 -->
 
-<main class="box-lg my-3 my-lg-7">
+<main class="box-lg my-5 my-lg-10">
     <header class="mb-2 mb-lg-5">
         <h1 class="fsi-xl fc-white-darker fs-underline">Documentation</h1>
 
@@ -189,7 +189,10 @@ docu-tip: Tip (under code example).
             docuelement.innerHTML += similar;
         }
     });
+</script>
 
+<script>
+    /* Display Code normally */
     $("pre code").each(function () {
         var html = $(this).html();
         var pattern = html.match(/\s*\n[\t\s]*/);
