@@ -19,6 +19,7 @@
     <script src="js/alerts.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/inputs.js"></script>
+    <script src="js/toasts.js"></script>
 </head>
 <body class="bg-main-dark">
 
@@ -39,11 +40,6 @@ docu-tip: Tip (under code example).
 <main class="box-lg my-3 my-lg-7">
     <header class="mb-2 mb-lg-5">
         <h1 class="fsi-xl fc-white-darker fs-underline">Documentation</h1>
-
-        <p class="fc-gray-lightest">
-            This version of the documentation is currently incomplete, but will be constantly updated, it is
-            recommended to use the beta version only to see how the documentation will be built in the future.
-        </p>
     </header>
 
     <div class="d-flex flex-d-column gy-3 gy-lg-5">
@@ -150,6 +146,14 @@ docu-tip: Tip (under code example).
                 <p class="d-block fc-error" data-input-remove="if if2">This text will get removed if you type in the field.</p>
             </div>
         </div>
+
+        <div class="docu-element" data-docu-title="Toast"
+             data-docu-description="Perfect for feedback."
+             data-example-centered data-docu-needs-js>
+            <div class="example flex-d-column gy-3">
+                <button class="btn-main" onclick="toast('Lorem ipsum dolor.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum libero, minima modi nostrum quis?', 2500)">Launch Toast</button>
+            </div>
+        </div>
     </div>
 </main>
 
@@ -160,7 +164,7 @@ docu-tip: Tip (under code example).
         var id = docuelement.dataset.docuTitle.toLowerCase().replaceAll(' ', '-');
         docuelement.id = id;
         docuelement.classList.add("d-flex", "flex-d-column", "gy-5", "gy-lg-7");
-        docuelement.innerHTML = '<div><h1 class="fc-main fw-bold fsi-xl"><a href="#' + id + '" class="fc-gray-dark" style="font-size: inherit;">#</a> ' + docuelement.dataset.docuTitle + '</h1>' + '<p>' + docuelement.dataset.docuDescription + '</p></div><div><div class="tabs"><div class="tab-wrapper"><div class="tab fc-main" data-tab-toggle="1" data-tab-active>Example</div><div class="tab fc-main" data-tab-toggle="2">Code</div></div><div class="tab-panel" data-tab-listen="1" data-tab-active><div class="tab-content">' + docuelement.innerHTML + '</div></div></div>';
+        docuelement.innerHTML = '<div><h1 class="fc-main fw-bold fsi-xl docu-element-title"><a href="#' + id + '" class="fc-gray-dark" style="font-size: inherit;">#</a> ' + docuelement.dataset.docuTitle + '</h1>' + '<p>' + docuelement.dataset.docuDescription + '</p></div><div><div class="tabs"><div class="tab-wrapper"><div class="tab fc-main" data-tab-toggle="1" data-tab-active>Example</div><div class="tab fc-main" data-tab-toggle="2">Code</div></div><div class="tab-panel" data-tab-listen="1" data-tab-active><div class="tab-content">' + docuelement.innerHTML + '</div></div></div>';
 
         var title = docuelement.querySelector('h1');
         var badges = "";
@@ -213,6 +217,7 @@ docu-tip: Tip (under code example).
     document.querySelectorAll('.code .copy').forEach(btn => {
         btn.addEventListener('click', function () {
             copyTextToClipboard(btn.parentNode.querySelector('.sc').innerText);
+            toast('Copied!', 'You\'ve copied the code example for the element \'' + btn.closest('.docu-element').querySelector('.docu-element-title').innerText.replaceAll('# ', '') + '\' successfully.', 2500);
         })
     });
 </script>
